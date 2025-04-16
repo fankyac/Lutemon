@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.lutemon.HomeFragment"
+        android:label="@string/nav_home">
+        <action
+            android:id="@+id/action_home_to_stats_detail"
+            app:destination="@id/nav_stats_detail">
+            <argument
+                android:name="lutemonId"
+                app:argType="integer" />
+            <argument
+                android:name="source"
+                app:argType="string"
+                android:defaultValue="home" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_training"
+        android:name="com.example.lutemon.TrainingFragment"
+        android:label="@string/nav_training">
+        <action
+            android:id="@+id/action_training_to_stats_detail"
+            app:destination="@id/nav_stats_detail">
+            <argument
+                android:name="lutemonId"
+                app:argType="integer" />
+            <argument
+                android:name="source"
+                app:argType="string"
+                android:defaultValue="training" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_battle"
+        android:name="com.example.lutemon.BattleFragment"
+        android:label="@string/nav_battle" />
+
+    <fragment
+        android:id="@+id/nav_create"
+        android:name="com.example.lutemon.CreateFragment"
+        android:label="@string/nav_create" />
+
+    <fragment
+        android:id="@+id/nav_stats_detail"
+        android:name="com.example.lutemon.StatsDetailFragment"
+        android:label="Stats">
+        <argument
+            android:name="lutemonId"
+            app:argType="integer" />
+        <argument
+            android:name="source"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_stats_detail_to_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_stats_detail_to_training"
+            app:destination="@id/nav_training"
+            app:popUpTo="@id/nav_training"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <!-- Global Actions -->
+    <action
+        android:id="@+id/action_global_nav_home"
+        app:destination="@id/nav_home"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+</navigation>

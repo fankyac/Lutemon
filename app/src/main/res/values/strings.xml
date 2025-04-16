@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LUTemon</string>
+    <string name="app_version">Version 1.0</string>
+    
+    <!-- About information -->
+    <string name="action_about">About</string>
+    <string name="about_title">About LUTemon</string>
+    <string name="about_message">LUTemon v1.0\n\nCourse: CT60A2412 Object-Oriented Programming\n\nGroup: oooooooops\n\nDevelopers:\nBoyue Zhang\nHaochuan Cui\nPeizhe Han</string>
+    
+    <!-- Navigation labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_training">Training</string>
+    <string name="nav_battle">Battle</string>
+    <string name="nav_create">Create</string>
+    <string name="nav_stats">Stats</string>
+
+    <!-- Action labels -->
+    <string name="train">Train</string>
+    <string name="battle">Battle</string>
+    <string name="return_home">Return</string>
+    <string name="create">Create</string>
+    <string name="start_battle">Start Battle</string>
+
+    <!-- Menu actions -->
+    <string name="action_export">Export Lutemons</string>
+    <string name="action_import">Import Lutemons</string>
+    <string name="action_clear">Clear Data</string>
+    <string name="message_saved">Data saved successfully</string>
+    <string name="message_exported">Lutemons exported to Downloads/lutemons.json</string>
+    <string name="message_imported">Lutemons imported successfully</string>
+    <string name="message_cleared">All data cleared</string>
+    <string name="message_error">Operation failed</string>
+    <string name="message_permission_required">Storage permission required</string>
+
+    <!-- Status messages -->
+    <string name="waiting_for_fighters">Waiting for fighters…</string>
+    <string name="ready_to_battle">Ready to battle!</string>
+    <string name="battle_in_progress">Battle in progress…</string>
+    <string name="error_battle_full">Battle area is full!</string>
+
+    <!-- Empty state messages -->
+    <string name="empty_home">No Lutemons at home</string>
+    <string name="empty_training">No Lutemons in training</string>
+
+    <!-- Create screen -->
+    <string name="lutemon_name">Name</string>
+    <string name="select_color">Select Color</string>
+    <string name="color_white">White</string>
+    <string name="color_green">Green</string>
+    <string name="color_pink">Pink</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_black">Black</string>
+    <string name="create_lutemon">Create Lutemon</string>
+    <string name="error_name_required">Name is required</string>
+    <string name="error_color_required">Please select a color</string>
+    <string name="creation_success">Created %2$s the %1$s Lutemon!</string>
+
+    <!-- Battle screen -->
+    <string name="select_fighter">Select Fighter</string>
+    <string name="health_display">HP: %1$d/%2$d</string>
+    <string name="attack_display">Attack: %1$d</string>
+    <string name="defense_display">Defense: %1$d</string>
+    <string name="experience_display">Experience: %1$d</string>
+
+    <!-- Format strings -->
+    <string name="lutemon_name_format">%1$s (%2$s)</string>
+    <string name="training_stats_format">Attack: %1$d (%2$d + %3$d exp)\nDefense: %4$d\nExperience: %5$d</string>
+
+    <!-- Stats labels -->
+    <string name="stats_battles_won">Battles Won</string>
+    <string name="stats_battles_lost">Battles Lost</string>
+    <string name="stats_training_count">Training Sessions</string>
+    <string name="stats_win_rate">Win Rate</string>
+    <string name="stats_attack_history">Attack History</string>
+    <string name="stats_defense_history">Defense History</string>
+    <string name="stats_experience_history">Experience History</string>
+
+    <!-- Dialog messages -->
+    <string name="dialog_confirm_clear">Are you sure you want to clear all data?</string>
+    <string name="dialog_confirm_import">This will replace all current Lutemons. Continue?</string>
+</resources>
