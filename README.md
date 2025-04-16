@@ -260,4 +260,4 @@ User Input → UI Layer → Business Logic → Data Management → Persistence
 ### Contact
 - Course: CT60A2412 Object-Oriented Programming
 - Institution: LUT University
-- Team Email: [Contact through course platform]
+- Team Email: Boyue.Zhang@student.lut.fi
